@@ -1,15 +1,20 @@
 
-# Reminder Notes
+# README
 
 This Flask application is a tutorial from
 [Learn Flask from Python - Full Tutorial](https://www.youtube.com/watch?v=Z1RJmh_OqeA) 
 <br>
+The final deployment is at https://flasktaskmanagment.herokuapp.com/
+
+
+# Issues and Reminder
+
 However the tutorial consists some minor issues 
 <br>
 1. Some content are _OS sensitive_, (I run on Windows, the tutorial run on MacOS)
 2. Some parts require extra steps
 <br>
-This _REMINDER.md_ aims to address those issues and write down some reminders
+Hence this _README.md_  also aims to address those issues and write down some reminders
 
 ## Issue 1 (4:19): install virtualenv
 
