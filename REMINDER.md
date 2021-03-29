@@ -60,9 +60,14 @@ Two possible reasons
 https://stackoverflow.com/questions/28235731/css-changes-are-not-getting-reflected-why
 
 
-###Reminder 4
+###Reminder 3
 After login to heroku, need to use gunicorn to create requirement.txt
 py -3 -mpip install guinicorn
 py -3 -mpip freeze > requirements.txt
 
-###After pushing, need to create procfile
+###Reminder 4 After pushing, need to create procfile
+
+###Issue 4
+Heroku application error: H14 error in heroku - “no web processes running”
+The problem is because of the "dynos"
+https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app
