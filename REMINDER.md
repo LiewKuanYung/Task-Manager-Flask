@@ -36,7 +36,7 @@ terminal> env\Stripts\activate
 ```
 
 Check out [issue-with-virtualenv-cannot-activate](https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activate)
-<br>
+
 
 Check out [activate script documentation](https://virtualenv.pypa.io/en/legacy/userguide.html#activate-script)
 <br>
@@ -75,7 +75,8 @@ Two possible reasons
 <br>
 In my case, the reason is 2.
 Try ```ctrl + F5``` in browser to force the refresh
-<br>
+
+
 Check out [css-changes-are-not-getting-reflected](https://stackoverflow.com/questions/28235731/css-changes-are-not-getting-reflected-why)
 
 
