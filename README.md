@@ -4,7 +4,6 @@
 This Flask application is a tutorial from
 [Learn Flask from Python - Full Tutorial](https://www.youtube.com/watch?v=Z1RJmh_OqeA) 
 
-
 The final deployment is at https://flasktaskmanagment.herokuapp.com/
 
 
@@ -47,7 +46,6 @@ terminal> env\Stripts\activate
 ```
 
 Check out [issue-with-virtualenv-cannot-activate](https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activate)
-
 Check out [activate script documentation](https://virtualenv.pypa.io/en/legacy/userguide.html#activate-script)
 <br>
 
@@ -84,7 +82,7 @@ Two possible reasons
 2. CSS file is cached
 <br>
 In my case, the reason is 2.
-Try ```ctrl + F5``` in browser to force the refresh
+Try `ctrl + F5` in browser to force the refresh
 
 
 Check out [css-changes-are-not-getting-reflected](https://stackoverflow.com/questions/28235731/css-changes-are-not-getting-reflected-why)
@@ -111,5 +109,4 @@ terminal> git push heroku master
 terminal> heroku ps:scale web=1
 ```
 The problem is because of the "dynos" 
-
 check the [heroku documentation](https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app)
