@@ -3,32 +3,38 @@
 
 This Flask application is a tutorial from
 [Learn Flask from Python - Full Tutorial](https://www.youtube.com/watch?v=Z1RJmh_OqeA) 
-<br>
+
+
 The final deployment is at https://flasktaskmanagment.herokuapp.com/
 
 
 # Issues and Reminder
 
 However the tutorial consists some minor issues 
-<br>
+
+
 1. Some content are _OS sensitive_, (I run on Windows, the tutorial run on MacOS)
 2. Some parts require extra steps
-<br>
+
+
 Hence this _README.md_  also aims to address those issues and write down some reminders
 
 ## Issue 1 (4:19): install virtualenv
 
-In order to use pip, we need to use the command 
+We can't use pip3 like that directly
+<br>
+In order to use pip to download venv, we need to use
 ```
 terminal> py -3 -mpip install virtualenv
 ```
+
 Check out [pip3-is-not-recognized-as-an-internal-or-external-command](https://stackoverflow.com/questions/55876467/pip3-is-not-recognized-as-an-internal-or-external-command-operable-program-or)
 
 ## Issue 2 (5:42): activate env
 
 The _source_ command is for linux or Poisix, not really for windows
 <br>
-Since I'm using powershell, what I should do is
+Since I'm using powershell, what I should do to activate env is to do RemoteSigned first than call activate inside Scripts
 <br>
 ```
 terminal> Set-ExecutionPolicy RemoteSigned (but this doesn't work)
@@ -41,7 +47,6 @@ terminal> env\Stripts\activate
 ```
 
 Check out [issue-with-virtualenv-cannot-activate](https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activate)
-
 
 Check out [activate script documentation](https://virtualenv.pypa.io/en/legacy/userguide.html#activate-script)
 <br>
@@ -106,5 +111,5 @@ terminal> git push heroku master
 terminal> heroku ps:scale web=1
 ```
 The problem is because of the "dynos" 
-<br>
+
 check the [heroku documentation](https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app)
