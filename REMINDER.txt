@@ -65,3 +65,4 @@ After login to heroku, need to use gunicorn to create requirement.txt
 py -3 -mpip install guinicorn
 py -3 -mpip freeze > requirements.txt
 
+###After pushing, need to create procfile
