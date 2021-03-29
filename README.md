@@ -45,7 +45,7 @@ terminal> ExecutionPolicy: RemoteSigned
 terminal> env\Stripts\activate
 ```
 
-Check out [issue-with-virtualenv-cannot-activate](https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activate)
+Check out [issue-with-virtualenv-cannot-activate](https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activate) <br>
 Check out [activate script documentation](https://virtualenv.pypa.io/en/legacy/userguide.html#activate-script)
 <br>
 
@@ -81,9 +81,8 @@ Two possible reasons
 1. CSS rule is not applied
 2. CSS file is cached
 <br>
-In my case, the reason is 2.
+In my case, the reason is 2.<br>
 Try `ctrl + F5` in browser to force the refresh
-
 
 Check out [css-changes-are-not-getting-reflected](https://stackoverflow.com/questions/28235731/css-changes-are-not-getting-reflected-why)
 
@@ -108,5 +107,5 @@ _H14 error in heroku - “no web processes running”_
 terminal> git push heroku master
 terminal> heroku ps:scale web=1
 ```
-The problem is because of the "dynos" 
+The problem is because of the "dynos" <br>
 check the [heroku documentation](https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app)
