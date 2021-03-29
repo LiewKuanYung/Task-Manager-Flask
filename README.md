@@ -2,8 +2,7 @@
 # README
 
 This Flask application is a tutorial from
-[Learn Flask from Python - Full Tutorial](https://www.youtube.com/watch?v=Z1RJmh_OqeA) 
-
+[Learn Flask from Python - Full Tutorial](https://www.youtube.com/watch?v=Z1RJmh_OqeA) <br>
 The final deployment is at https://flasktaskmanagment.herokuapp.com/
 
 
@@ -20,8 +19,7 @@ Hence this _README.md_  also aims to address those issues and write down some re
 
 ## Issue 1 (4:19): install virtualenv
 
-We can't use pip3 like that directly
-<br>
+We can't use pip3 like that directly <br>
 In order to use pip to download venv, we need to use
 ```
 terminal> py -3 -mpip install virtualenv
@@ -31,10 +29,8 @@ Check out [pip3-is-not-recognized-as-an-internal-or-external-command](https://st
 
 ## Issue 2 (5:42): activate env
 
-The _source_ command is for linux or Poisix, not really for windows
-<br>
+The _source_ command is for linux or Poisix, not really for windows <br>
 Since I'm using powershell, what I should do to activate env is to do RemoteSigned first than call activate inside Scripts
-<br>
 ```
 terminal> Set-ExecutionPolicy RemoteSigned (but this doesn't work)
 ```
@@ -82,7 +78,7 @@ Two possible reasons
 2. CSS file is cached
 <br>
 In my case, the reason is 2.<br>
-Try `ctrl + F5` in browser to force the refresh
+Try ``ctrl + F5`` in browser to force the refresh 
 
 Check out [css-changes-are-not-getting-reflected](https://stackoverflow.com/questions/28235731/css-changes-are-not-getting-reflected-why)
 
