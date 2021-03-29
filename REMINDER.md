@@ -8,6 +8,7 @@ However the tutorial consists some minor issues
 <br>
 1. Some content are _OS sensitive_, (I run on Windows, the tutorial run on MacOS)
 2. Some parts require extra steps
+<br>
 This _REMINDER.md_ aims to address those issues and write down some reminders
 
 ## Issue 1 (4:19): install virtualenv
@@ -20,12 +21,12 @@ Check out [pip3-is-not-recognized-as-an-internal-or-external-command](https://st
 
 ## Issue 2 (5:42): activate env
 
-The 'source' command is for linux (Poisix), not really for windows
+The _source_ command is for linux or Poisix, not really for windows
 <br>
 Since I'm using powershell, what I should do is
 <br>
 ```
-terminal> Set-ExecutionPolicy RemoteSigned (this doesn't work)
+terminal> Set-ExecutionPolicy RemoteSigned (but this doesn't work)
 ```
 However, this might run into access denied issues. Instead, use
 ```
@@ -33,8 +34,10 @@ terminal> Set-ExecutionPolicy -Scope CurrentUser
 terminal> ExecutionPolicy: RemoteSigned
 terminal> env\Stripts\activate
 ```
+
 Check out [issue-with-virtualenv-cannot-activate](https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activate)
 <br>
+
 Check out [activate script documentation](https://virtualenv.pypa.io/en/legacy/userguide.html#activate-script)
 <br>
 
@@ -69,6 +72,7 @@ Two possible reasons
 <br>
 1. CSS rule is not applied
 2. CSS file is cached
+<br>
 In my case, the reason is 2.
 Try ```ctrl + F5``` in browser to force the refresh
 <br>
@@ -94,7 +98,6 @@ _H14 error in heroku - “no web processes running”_
 ```
 terminal> git push heroku master
 terminal> heroku ps:scale web=1
-
 ```
 The problem is because of the "dynos" 
 <br>
