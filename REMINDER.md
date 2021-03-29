@@ -61,7 +61,7 @@ py terminal>>> exit()
 
 Check out more about the "Jinja syntax" 
 
-### Issue 3 (30:59): CSS not updating after edited
+## Issue 3 (30:59): CSS not updating after edited
 
 Changes made in CSS is not reflecting
 <br>
@@ -87,7 +87,7 @@ py -3 -mpip freeze > requirements.txt
 
 After pushing to git, need to create procfile
 
-### Issue 4 (Final deployment)
+## Issue 4 (Final deployment)
 
 Heroku application error: 
 _H14 error in heroku - “no web processes running”_
