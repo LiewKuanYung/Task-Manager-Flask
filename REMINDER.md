@@ -1,73 +1,92 @@
 
-# Reminder
+# Reminder Notes
 
+## Resource
 
-##Flasky
-flasky is a tutorial from
-https://blog.miguelgrinberg.com/post/setting-up-a-flask-application-in-visual-studio-code
-Inside there, I created an virtual env named "env"
+This Flask application is a tutorial from
+[Learn Flask from Python - Full Tutorial](https://www.youtube.com/watch?v=Z1RJmh_OqeA)
+However the tutorial consists some minor issues
+1. Some content are _OS sensitive_, (I run on Windows, the tutorial run on MacOS)
+2. Some parts require extra steps
+And this reminder notes aims to address those issues
 
+### Issue 1 (4:19): install virtualenv
 
+In order to use pip, we need to use the command 
+```
+terminal> py -3 -mpip install virtualenv
+```
+Check out [pip3-is-not-recognized-as-an-internal-or-external-command](https://stackoverflow.com/questions/55876467/pip3-is-not-recognized-as-an-internal-or-external-command-operable-program-or)
 
-##FreeCodeCamp
-The rest of the part is follow 
-https://www.youtube.com/watch?v=Z1RJmh_OqeA
-Howeer, there is some issues with the video
+### Issue 2 (5:42): activate env
 
-###Issue 1: install virtualenv
-In order to use pip, use the comman show inside 
-py -3 -mpip install virtualenv
-https://stackoverflow.com/questions/55876467/pip3-is-not-recognized-as-an-internal-or-external-command-operable-program-or
-
-###Issue 2: activate
-The 'source' command is for linux 
-https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activate
+The 'source' command is for linux (Poisix), not really for windows
 Since I'm using powershell, what I should do is
-- Set-ExecutionPolicy RemoteSigned (this doesn't work)
-- Set-ExecutionPolicy -Scope CurrentUser
-  ExecutionPolicy: RemoteSigned
-  env\Stripts\activate
-Check out detailed documentation at
-https://virtualenv.pypa.io/en/legacy/userguide.html#activate-script
+```
+terminal> Set-ExecutionPolicy RemoteSigned (this doesn't work)
+```
+However, this might run into access denied issues. Instead, use
+```
+terminal> Set-ExecutionPolicy -Scope CurrentUser
+terminal> ExecutionPolicy: RemoteSigned
+terminal> env\Stripts\activate
+```
+Check out [issue-with-virtualenv-cannot-activate](https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activate)
+Check out [activate script documentation](https://virtualenv.pypa.io/en/legacy/userguide.html#activate-script)
 
 
-**Why we need virtual env?
-**So whatever we install or config can be inside this env, 
-**Won't affect your global
-**Also easier for collaboration
+Side note, why we need virtual env?
+So whatever we install or config can be inside this env
+It won't affect your global, also easier for collaboration
 
-
-###Reminder 1
+### Reminder 1
 To create database
-1. Go to env
-2. > py -3
-3. >>> from app import db
-4. >>> db.create_all()
-- Then a test.db will be created
-5. >>> exit()
+```
+Go to env
+terminal> py -3
+py terminal>>> from app import db
+py terminal>>> db.create_all()
+```
+Then a test.db will be created. Now we can exit py terminal
+```
+py terminal>>> exit()
+```
 
-###Reminder 2
-**Check out more about the "Jinja syntax" 
+### Reminder 2
 
+Check out more about the "Jinja syntax" 
 
-###Issue 3
+### Issue 3 (30:59): CSS not updating after edited
+
 Changes made in CSS is not reflecting
 Two possible reasons
 1. CSS rule is not applied
 2. CSS file is cached
-- in my case, the reason is 2.
-- Try ctrl + F5 in browser to force the refresh
-https://stackoverflow.com/questions/28235731/css-changes-are-not-getting-reflected-why
+In my case, the reason is 2.
+Try ```ctrl + F5``` in browser to force the refresh
+Check out [css-changes-are-not-getting-reflected](https://stackoverflow.com/questions/28235731/css-changes-are-not-getting-reflected-why)
 
 
-###Reminder 3
+### Reminder 3
+
 After login to heroku, need to use gunicorn to create requirement.txt
+```
 py -3 -mpip install guinicorn
 py -3 -mpip freeze > requirements.txt
+```
 
-###Reminder 4 After pushing, need to create procfile
+### Reminder 4 
 
-###Issue 4
-Heroku application error: H14 error in heroku - “no web processes running”
-The problem is because of the "dynos"
-https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app
+After pushing to git, need to create procfile
+
+### Issue 4 (Final deployment)
+
+Heroku application error: 
+_H14 error in heroku - “no web processes running”_
+```
+terminal> git push heroku master
+terminal> heroku ps:scale web=1
+
+```
+The problem is because of the "dynos" 
+check the [heroku documentation](https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app)
