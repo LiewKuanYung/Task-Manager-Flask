@@ -41,8 +41,10 @@ terminal> ExecutionPolicy: RemoteSigned
 terminal> env\Stripts\activate
 ```
 
+Other relevant problems
 Check out [issue-with-virtualenv-cannot-activate](https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activate) <br>
-Check out [activate script documentation](https://virtualenv.pypa.io/en/legacy/userguide.html#activate-script)
+Check out [activate script documentation](https://virtualenv.pypa.io/en/legacy/userguide.html#activate-script)<br>
+Check out [virtualenv is not recognized](https://stackoverflow.com/questions/35950740/virtualenv-is-not-recognized-as-an-internal-or-external-command-operable-prog)
 <br>
 
 Side note, why we need virtual env?
