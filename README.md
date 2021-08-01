@@ -5,6 +5,7 @@ This Flask application is a tutorial from
 [Learn Flask from Python - Full Tutorial](https://www.youtube.com/watch?v=Z1RJmh_OqeA) <br>
 The final deployment is at https://flasktaskmanagment.herokuapp.com/
 
+![demo](demo.png)
 
 # Issues and Reminder
 
