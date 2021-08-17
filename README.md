@@ -31,7 +31,7 @@ Check out [pip3-is-not-recognized-as-an-internal-or-external-command](https://st
 After installed, you can initiate virtualenv like this
 - go to where you want create django app on that folder.
 - then run this command on command prompt : `python -m virtualenv .`
-(eg. C:\Users\gshiv\Desktop\django>python -m virtualenv .)
+- (eg. C:\Users\gshiv\Desktop\django>python -m virtualenv .)
 - Don't forget the "dot" because that indicates path, which refers to current path.
 
 ## Issue 2 (5:42): activate env
